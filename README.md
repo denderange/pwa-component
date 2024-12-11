@@ -1,6 +1,7 @@
 # React + TypeScript + Vite
 
-live demo: https://denderange.github.io/pwa-component/
+- live demo: https://denderange.github.io/pwa-component/
+- в live demo информация поступает из json, расположенного на стороннем сервере.
 --
 
 . сборка и запуск:
