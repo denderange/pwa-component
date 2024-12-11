@@ -1,16 +1,25 @@
 /* блок с текстом */
 .textBlock {
 	position: relative;
-	padding: 0px 16px;
+	padding: 0px 16px 16px 16px;
+	background-color: var(--color-card);
+	border-radius: 0px 0px var(--borderRadius) var(--borderRadius);
+	-webkit-border-radius: 0px 0px var(--borderRadius) var(--borderRadius);
+	-moz-border-radius: 0px 0px var(--borderRadius) var(--borderRadius);
+	-ms-border-radius: 0px 0px var(--borderRadius) var(--borderRadius);
+	-o-border-radius: 0px 0px var(--borderRadius) var(--borderRadius);
 }
 
 .textContent {
+	position: relative;
+	overflow: hidden;
 	display: -webkit-box;
+	border-top: 1px solid #dbdbdb;
+	padding-top: 8px;
 	line-clamp: 3;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
-	overflow: hidden;
-	position: relative;
+	font-size: 14px;
 	line-height: 1.4;
 	color: #333;
 	transition: all 0.3s ease;

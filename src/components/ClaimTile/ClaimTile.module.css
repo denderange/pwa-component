@@ -1,17 +1,29 @@
 .tileContainer {
-	background-color: #ffffff;
 	border-radius: var(--borderRadius);
 	-webkit-border-radius: var(--borderRadius);
 	-moz-border-radius: var(--borderRadius);
 	-ms-border-radius: var(--borderRadius);
 	-o-border-radius: var(--borderRadius);
 	padding-bottom: 20px;
-	max-height: max-content;
+	display: flex;
+	flex-direction: column;
+}
+
+.infoWrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-card);
+	border-radius: 0px 0px var(--borderRadius) var(--borderRadius);
+	-webkit-border-radius: 0px 0px var(--borderRadius) var(--borderRadius);
+	-moz-border-radius: 0px 0px var(--borderRadius) var(--borderRadius);
+	-ms-border-radius: 0px 0px var(--borderRadius) var(--borderRadius);
+	-o-border-radius: 0px 0px var(--borderRadius) var(--borderRadius);
 }
 
 .infoContainer {
 	display: flex;
 	flex-direction: column;
+
 	gap: 8px;
 	font-size: 14px;
 	line-height: 20px;
@@ -21,11 +33,6 @@
 .info {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-}
-
-.info:last-child {
-	border-bottom: 1px solid #dbdbdb;
-	padding-bottom: 8px;
 }
 
 .textLight {

@@ -7,6 +7,8 @@
 	--color-completed: #1c9a13;
 
 	--color-orange: #e95721;
+	--color-bg: #f5f5f5;
+	--color-card: #ffffff;
 }
 
 body {
@@ -19,9 +21,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 
 	display: flex;
-	min-width: 320px;
+	min-width: 300px;
 	min-height: 100vh;
-	background-color: #f5f5f5;
+	background-color: var(--color-bg);
 }
 
 button {
@@ -41,4 +43,23 @@ button {
 	grid-template-columns: repeat(4, 1fr);
 	grid-column-gap: 24px;
 	grid-row-gap: 64px;
+}
+
+@media screen and (max-width: 1180px) {
+	.wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.wrapper {
+		grid-template-columns: repeat(1, 1fr);
+		grid-row-gap: 32px;
+	}
 }

@@ -2,6 +2,12 @@
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	position: relative;
+	background-color: var(--color-card);
+	border-radius: var(--borderRadius) var(--borderRadius) 0px 0px;
+	-webkit-border-radius: var(--borderRadius) var(--borderRadius) 0px 0px;
+	-moz-border-radius: var(--borderRadius) var(--borderRadius) 0px 0px;
+	-ms-border-radius: var(--borderRadius) var(--borderRadius) 0px 0px;
+	-o-border-radius: var(--borderRadius) var(--borderRadius) 0px 0px;
 }
 
 .gearImage {

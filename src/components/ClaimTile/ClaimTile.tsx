@@ -14,32 +14,34 @@ const ClaimTile = ({ claim }: { claim: IClaim }) => {
 				claimNumber={claim.claimNumber}
 			/>
 
-			<div className={styles.infoContainer}>
-				<div className={styles.info}>
-					<div className={styles.textLight}>Создана:</div>
-					<div>
-						{formatDate(claim.dateOfCreation.created)}{" "}
-						{claim.dateOfCreation.duration &&
-							"(" + formatDuration(claim.dateOfCreation.duration) + ")"}
+			<div className={styles.infoWrapper}>
+				<div className={styles.infoContainer}>
+					<div className={styles.info}>
+						<div className={styles.textLight}>Создана:</div>
+						<div>
+							{formatDate(claim.dateOfCreation.created)}{" "}
+							{claim.dateOfCreation.duration &&
+								"(" + formatDuration(claim.dateOfCreation.duration) + ")"}
+						</div>
+					</div>
+					<div className={styles.info}>
+						<div className={styles.textLight}>Контроль:</div>
+						<div>{formatDate(claim.dateOfControl)}</div>
+					</div>
+					<div className={styles.info}>
+						<div className={styles.textLight}>Система:</div>
+						<div>{claim.system}</div>
+					</div>
+					<div className={styles.info}>
+						<div className={styles.textLight}>Объект:</div>
+						<div>
+							{claim.subject.title} {claim.subject.city} {claim.subject.street}
+						</div>
 					</div>
 				</div>
-				<div className={styles.info}>
-					<div className={styles.textLight}>Контроль:</div>
-					<div>{formatDate(claim.dateOfControl)}</div>
-				</div>
-				<div className={styles.info}>
-					<div className={styles.textLight}>Система:</div>
-					<div>{claim.system}</div>
-				</div>
-				<div className={styles.info}>
-					<div className={styles.textLight}>Объект:</div>
-					<div>
-						{claim.subject.title} {claim.subject.city} {claim.subject.street}
-					</div>
-				</div>
-			</div>
 
-			<ClaimDescription text={claim.claimText} />
+				<ClaimDescription text={claim.claimText} />
+			</div>
 		</article>
 	);
 };
