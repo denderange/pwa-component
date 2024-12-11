@@ -8,6 +8,7 @@
 - клонировать репозиторий,
 - npm install
 - npm run dev
+- перейти в брайзере по адресу http://localhost:5173/pwa-component
 
 протестировать изменение полей JSON можно в src/mockData/data.ts
 (поля json описаны в src/types)
