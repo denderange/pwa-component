@@ -3,7 +3,7 @@
 live demo: https://denderange.github.io/pwa-component/
 --
 
-- сборка и запуск:
+. сборка и запуск:
 - клонировать репозиторий,
 - npm install
 - npm run dev
