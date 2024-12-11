@@ -1,0 +1,44 @@
+:root {
+	--borderRadius: 15px;
+
+	--color-inProgress: #5d5d5d5d;
+	--color-overdue: #f9372c;
+	--color-hasFeedback: #019ec1;
+	--color-completed: #1c9a13;
+
+	--color-orange: #e95721;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-synthesis: none;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	display: flex;
+	min-width: 320px;
+	min-height: 100vh;
+	background-color: #f5f5f5;
+}
+
+button {
+	font-family: inherit;
+	cursor: pointer;
+}
+
+#root {
+	width: 100%;
+}
+
+.wrapper {
+	max-width: 1384px;
+	padding: 20px 10px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 24px;
+	grid-row-gap: 64px;
+}
